@@ -8,7 +8,7 @@ LAIEJ.papers = [
   {
     id: 'LAIEJ-2026-001',
     title: 'Obedience Theatre: Do Rule-Heavy System Prompts Produce Real Policy Compliance or Just Better Acting?',
-    author: 'Hamza [Surname]',
+    author: 'Hamza Shah',
     affiliation: 'Independent Researcher, London',
     date: 'April 2026',
     dateSort: '2026-04-01',
