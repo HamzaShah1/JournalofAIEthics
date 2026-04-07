@@ -1,0 +1,178 @@
+% =============================================================
+%  Journal of AI Ethics (LAIEJ) — Official Paper Template
+%  Version 1.0 | April 2026
+%  https://journalofaiethics.org
+% =============================================================
+%
+%  INSTRUCTIONS
+%  ------------
+%  1. Fill in the metadata fields below (title, author, date).
+%  2. Write your paper in the sections provided.
+%  3. Leave the Reference Code field blank on first submission.
+%     The editor will assign a code (LAIEJ-YYYY-XXX) on acceptance.
+%  4. Generate HTML and PDF outputs with Pandoc before submitting:
+%
+%       pandoc LAIEJ-YYYY-XXX.tex -o LAIEJ-YYYY-XXX.html \
+%         --standalone --css=../../styles.css
+%
+%       pandoc LAIEJ-YYYY-XXX.tex -o LAIEJ-YYYY-XXX.pdf
+%
+%  5. Place all three files (.tex, .html, .pdf) in a folder named
+%     papers/LAIEJ-YYYY-XXX/ and open a pull request.
+%
+%  REQUIREMENTS SUMMARY
+%  --------------------
+%  - Abstract: maximum 250 words
+%  - Keywords: 3–8 comma-separated terms
+%  - References: APA 7th edition (use natbib / apalike)
+%  - All sections below are required unless marked [optional]
+%  - Disclose any use of AI tools in a note at the end of the paper
+% =============================================================
+
+\documentclass[12pt, a4paper]{article}
+
+% --- Layout ---
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+
+% --- Typography ---
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}          % Improved text justification
+
+% --- Links & URLs ---
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+
+% --- References (APA-style) ---
+\usepackage{natbib}
+\bibliographystyle{apalike}
+
+% --- Tables & Figures ---
+\usepackage{booktabs}           % Professional tables
+\usepackage{graphicx}           % Include images
+\usepackage{float}              % Better figure placement
+\usepackage{caption}
+\captionsetup{font=small, labelfont=bf, skip=6pt}
+
+% --- Mathematics [optional] ---
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% --- Code listings [optional] ---
+\usepackage{listings}
+\lstset{basicstyle=\small\ttfamily, breaklines=true}
+
+% =============================================================
+%  METADATA — Fill in before submission
+% =============================================================
+
+\title{Your Paper Title}
+
+\author{
+  Your Name \\
+  \small Your Institution or "Independent Researcher" \\
+  \small \href{mailto:you@example.com}{you@example.com}
+}
+
+\date{Month Year}
+
+% --- Reference Code (leave blank on first submission) ---
+% LAIEJ-YYYY-XXX
+
+% =============================================================
+%  DOCUMENT
+% =============================================================
+
+\begin{document}
+\maketitle
+
+% --- Horizontal rule beneath title ---
+\noindent\rule{\linewidth}{0.4pt}
+\vspace{0.5em}
+
+% =============================================================
+%  ABSTRACT
+%  Maximum 250 words. No citations in the abstract.
+% =============================================================
+
+\begin{abstract}
+\noindent
+Your abstract here. Summarise the research question, methodology,
+key findings, and implications. Maximum 250 words. Do not include
+citations in the abstract.
+\end{abstract}
+
+\noindent\textbf{Keywords:} keyword1, keyword2, keyword3, keyword4
+
+\noindent\rule{\linewidth}{0.4pt}
+\vspace{1em}
+
+% =============================================================
+%  SECTIONS
+%  All sections are required. You may add subsections as needed.
+% =============================================================
+
+\section{Introduction \& Research Question}
+%
+% State the problem or phenomenon you are addressing, explain why
+% it matters, and close with a clear, specific research question.
+% Typical length: 400–600 words.
+
+\section{Background \& Literature Review}
+%
+% Situate your work in the existing literature. What has been
+% established, and where does your contribution fit? Cite
+% relevant work using \citep{} and \citet{} commands.
+% Typical length: 600–900 words.
+
+\section{Methodology}
+%
+% Explain how you conducted the research or constructed the
+% argument. For empirical work: describe your data, experimental
+% design, and analysis approach. For theoretical work: describe
+% the analytical framework and how you applied it.
+% Typical length: 500–800 words.
+
+\section{Findings \& Analysis}
+%
+% Present your results and analyse what they mean. For empirical
+% work: report your data with appropriate statistical context.
+% For theoretical work: develop your argument step by step.
+% Typical length: 800–1200 words.
+
+\section{Discussion}
+%
+% Interpret your findings in light of the broader literature.
+% Address limitations of your study. Discuss implications for
+% practice, policy, or further research.
+% Typical length: 400–600 words.
+
+\section{Conclusion}
+%
+% Summarise the key contribution and what should be taken away.
+% No new information here — only synthesis. End with a clear
+% statement of the paper's normative or practical implication.
+% Typical length: 200–350 words.
+
+% =============================================================
+%  AI TOOL DISCLOSURE [required if applicable]
+% =============================================================
+
+% Uncomment and fill in if you used AI tools in this research:
+%
+% \section*{AI Tool Disclosure}
+% This paper was prepared [with / without] the assistance of AI
+% writing tools. [Describe what tool was used, for what purpose,
+% and how outputs were reviewed or verified.]
+
+% =============================================================
+%  REFERENCES
+%  Uses natbib with apalike style (APA 7th edition approximation)
+%  Store your .bib file as references.bib in the same folder.
+% =============================================================
+
+\bibliography{references}
+
+\end{document}

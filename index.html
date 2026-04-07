@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Journal of AI Ethics</title>
+  <meta name="description" content="Journal of AI Ethics (LAIEJ) — open-access academic journal for AI ethics, alignment, LLM security, and AI policy research.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Journal of AI Ethics">
+  <meta property="og:description" content="Open-access academic journal for AI ethics and alignment research.">
+  <meta property="og:type" content="website">
+  <link rel="alternate" type="application/rss+xml" title="Journal of AI Ethics RSS Feed" href="feed.xml">
+  <link rel="canonical" href="https://journalofaiethics.org/">
+  <link rel="stylesheet" href="styles.css">
+  <script src="theme.js"></script>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <nav class="top-nav" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="top-nav__brand">LAIEJ</a>
+    <div class="top-nav__actions">
+      <button id="theme-toggle" class="btn-theme" aria-label="Switch theme">☽ Dark</button>
+      <button id="hamburger-btn" class="btn-hamburger" aria-label="Open navigation" aria-expanded="false">☰</button>
+    </div>
+  </nav>
+
+  <div id="sidebar-overlay" class="sidebar-overlay" aria-hidden="true"></div>
+
+  <div class="site-wrapper">
+    <div class="page-layout">
+
+      <!-- Left Sidebar -->
+      <aside id="left-sidebar" class="left-sidebar" aria-label="Journal navigation">
+        <div class="sidebar-logo">
+          <a href="index.html" class="sidebar-logo__name">Journal of<br>AI Ethics</a>
+          <span class="sidebar-logo__sub">ISSN: XXXX-XXXX · Vol. 1</span>
+        </div>
+
+        <nav aria-label="Site pages">
+          <ul class="sidebar-nav">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="papers.html">Papers</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="submit.html">Submit</a></li>
+          </ul>
+        </nav>
+
+        <hr class="sidebar-divider">
+
+        <p class="sidebar-section-title">Browse by Topic</p>
+        <div class="topic-tags">
+          <a href="papers.html?tag=AI+Ethics" class="tag-btn">AI Ethics</a>
+          <a href="papers.html?tag=LLM+Security" class="tag-btn">LLM Security</a>
+          <a href="papers.html?tag=AI+in+Industry" class="tag-btn">AI in Industry</a>
+          <a href="papers.html?tag=Alignment" class="tag-btn">Alignment</a>
+          <a href="papers.html?tag=Interpretability" class="tag-btn">Interpretability</a>
+          <a href="papers.html?tag=AI+Policy" class="tag-btn">AI Policy</a>
+        </div>
+
+        <hr class="sidebar-divider">
+
+        <p class="sidebar-section-title">Archive</p>
+        <ul class="archive-list">
+          <li>
+            <span class="archive-list__vol">Volume 1 (2026) <span>▾</span></span>
+            <ul class="archive-list__issues">
+              <li><a href="papers.html">Issue 1 — April 2026</a></li>
+            </ul>
+          </li>
+        </ul>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content" id="main-content">
+
+        <!-- Masthead -->
+        <header class="masthead" role="banner">
+          <h1 class="masthead__title">Journal of AI Ethics</h1>
+          <p class="masthead__subtitle">Open-Access Academic Research in AI Ethics, Alignment &amp; Governance</p>
+          <p class="masthead__meta">ISSN: XXXX-XXXX &nbsp;&nbsp;·&nbsp;&nbsp; Volume 1 | Issue 1 | 2026</p>
+          <hr class="masthead__rule">
+        </header>
+
+        <!-- Tabs -->
+        <div class="tabs" role="tablist" aria-label="Paper feed">
+          <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="tab-latest" id="btn-latest">Latest</button>
+          <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-all" id="btn-all">All Papers</button>
+        </div>
+
+        <!-- Tab: Latest -->
+        <div id="tab-latest" class="tab-panel active" role="tabpanel" aria-labelledby="btn-latest">
+
+          <article class="paper-card" data-primary-tag="LLM Security">
+            <div class="paper-card__ref">LAIEJ-2026-001</div>
+            <h2 class="paper-card__title">
+              <a href="papers/LAIEJ-2026-001/LAIEJ-2026-001.html">
+                Obedience Theatre: Do Rule-Heavy System Prompts Produce Real Policy Compliance or Just Better Acting?
+              </a>
+            </h2>
+            <div class="paper-card__byline">
+              <span>Hamza [Surname]</span>
+              <span>Independent Researcher, London</span>
+              <span>April 2026</span>
+            </div>
+            <p class="paper-card__abstract">
+              When an assistant is given detailed internal rules, does it genuinely follow policy better, or does it simply learn to sound compliant? This paper examines the gap between behavioural compliance signals and actual policy adherence in large language models under heavily constrained system prompts. Drawing on a series of structured prompt experiments, we distinguish between surface-level compliance theatre — where models produce outputs that appear rule-following — and deeper behavioural policy internalisation.
+            </p>
+            <div class="paper-card__tags">
+              <span class="tag-pill tag-pill--llm-security">LLM Security</span>
+              <span class="tag-pill tag-pill--ethics">AI Ethics</span>
+              <span class="tag-pill tag-pill--alignment">Alignment</span>
+            </div>
+            <div class="paper-card__footer">
+              <a class="paper-card__read" href="papers/LAIEJ-2026-001/LAIEJ-2026-001.html">Read paper &rarr;</a>
+              <a class="paper-card__pdf" href="papers/LAIEJ-2026-001/LAIEJ-2026-001.pdf" download>&#8595; PDF</a>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Tab: All Papers -->
+        <div id="tab-all" class="tab-panel" role="tabpanel" aria-labelledby="btn-all">
+
+          <article class="paper-card" data-primary-tag="LLM Security">
+            <div class="paper-card__ref">LAIEJ-2026-001</div>
+            <h2 class="paper-card__title">
+              <a href="papers/LAIEJ-2026-001/LAIEJ-2026-001.html">
+                Obedience Theatre: Do Rule-Heavy System Prompts Produce Real Policy Compliance or Just Better Acting?
+              </a>
+            </h2>
+            <div class="paper-card__byline">
+              <span>Hamza [Surname]</span>
+              <span>Independent Researcher, London</span>
+              <span>April 2026</span>
+            </div>
+            <p class="paper-card__abstract">
+              When an assistant is given detailed internal rules, does it genuinely follow policy better, or does it simply learn to sound compliant? This paper examines the gap between behavioural compliance signals and actual policy adherence in large language models under heavily constrained system prompts. Drawing on a series of structured prompt experiments, we distinguish between surface-level compliance theatre — where models produce outputs that appear rule-following — and deeper behavioural policy internalisation.
+            </p>
+            <div class="paper-card__tags">
+              <span class="tag-pill tag-pill--llm-security">LLM Security</span>
+              <span class="tag-pill tag-pill--ethics">AI Ethics</span>
+              <span class="tag-pill tag-pill--alignment">Alignment</span>
+            </div>
+            <div class="paper-card__footer">
+              <a class="paper-card__read" href="papers/LAIEJ-2026-001/LAIEJ-2026-001.html">Read paper &rarr;</a>
+              <a class="paper-card__pdf" href="papers/LAIEJ-2026-001/LAIEJ-2026-001.pdf" download>&#8595; PDF</a>
+            </div>
+          </article>
+
+        </div>
+
+      </main>
+
+      <!-- Right Sidebar -->
+      <aside class="right-sidebar" aria-label="Journal information">
+
+        <div class="sidebar-widget">
+          <h2 class="sidebar-widget__title">About the Journal</h2>
+          <p>LAIEJ is a peer-reviewed, open-access journal publishing original research on the ethics, safety, and governance of artificial intelligence.</p>
+          <p>All papers are freely available under CC BY 4.0.</p>
+        </div>
+
+        <div class="sidebar-widget">
+          <h2 class="sidebar-widget__title">Publication Details</h2>
+          <span class="issn-badge">ISSN XXXX-XXXX</span>
+          <br><br>
+          <a href="https://creativecommons.org/licenses/by/4.0/" class="license-badge" target="_blank" rel="noopener">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+            CC BY 4.0 Licence
+          </a>
+          <a href="#" class="github-link" target="_blank" rel="noopener">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+            GitHub Repository
+          </a>
+          <a href="feed.xml" class="rss-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19.01 7.38 20 6.18 20C4.98 20 4 19.01 4 17.82a2.18 2.18 0 0 1 2.18-2.18M4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27V4.44m0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93V10.1z"/></svg>
+            RSS Feed
+          </a>
+        </div>
+
+      </aside>
+
+    </div><!-- .page-layout -->
+  </div><!-- .site-wrapper -->
+
+  <footer class="site-footer">
+    <div class="site-wrapper">
+      &copy; 2026 Journal of AI Ethics &nbsp;·&nbsp;
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>
+      &nbsp;·&nbsp;
+      <a href="submit.html">Submit a Paper</a>
+      &nbsp;·&nbsp;
+      <a href="about.html">About</a>
+    </div>
+  </footer>
+
+  <script>
+    /* Tab switching */
+    document.addEventListener('DOMContentLoaded', function () {
+      var tabs = document.querySelectorAll('.tab-btn');
+      tabs.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          tabs.forEach(function (b) {
+            b.classList.remove('active');
+            b.setAttribute('aria-selected', 'false');
+          });
+          this.classList.add('active');
+          this.setAttribute('aria-selected', 'true');
+          var panelId = this.getAttribute('aria-controls');
+          document.querySelectorAll('.tab-panel').forEach(function (p) {
+            p.classList.toggle('active', p.id === panelId);
+          });
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

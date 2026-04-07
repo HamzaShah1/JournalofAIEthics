@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit a Paper — Journal of AI Ethics</title>
+  <meta name="description" content="Submit original research to the Journal of AI Ethics via GitHub pull request. Full submission guidelines, LaTeX template, and checklist.">
+  <meta name="robots" content="index, follow">
+  <link rel="alternate" type="application/rss+xml" title="Journal of AI Ethics RSS Feed" href="feed.xml">
+  <link rel="canonical" href="https://journalofaiethics.org/submit.html">
+  <link rel="stylesheet" href="styles.css">
+  <script src="theme.js"></script>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <nav class="top-nav" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="top-nav__brand">LAIEJ</a>
+    <div class="top-nav__actions">
+      <button id="theme-toggle" class="btn-theme" aria-label="Switch theme">☽ Dark</button>
+      <button id="hamburger-btn" class="btn-hamburger" aria-label="Open navigation" aria-expanded="false">☰</button>
+    </div>
+  </nav>
+
+  <div id="sidebar-overlay" class="sidebar-overlay" aria-hidden="true"></div>
+
+  <div class="site-wrapper">
+    <div class="page-layout">
+
+      <!-- Left Sidebar -->
+      <aside id="left-sidebar" class="left-sidebar" aria-label="Journal navigation">
+        <div class="sidebar-logo">
+          <a href="index.html" class="sidebar-logo__name">Journal of<br>AI Ethics</a>
+          <span class="sidebar-logo__sub">ISSN: XXXX-XXXX · Vol. 1</span>
+        </div>
+
+        <nav aria-label="Site pages">
+          <ul class="sidebar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="papers.html">Papers</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="submit.html" class="active">Submit</a></li>
+          </ul>
+        </nav>
+
+        <hr class="sidebar-divider">
+
+        <p class="sidebar-section-title">Browse by Topic</p>
+        <div class="topic-tags">
+          <a href="papers.html?tag=AI+Ethics" class="tag-btn">AI Ethics</a>
+          <a href="papers.html?tag=LLM+Security" class="tag-btn">LLM Security</a>
+          <a href="papers.html?tag=AI+in+Industry" class="tag-btn">AI in Industry</a>
+          <a href="papers.html?tag=Alignment" class="tag-btn">Alignment</a>
+          <a href="papers.html?tag=Interpretability" class="tag-btn">Interpretability</a>
+          <a href="papers.html?tag=AI+Policy" class="tag-btn">AI Policy</a>
+        </div>
+
+        <hr class="sidebar-divider">
+
+        <p class="sidebar-section-title">Archive</p>
+        <ul class="archive-list">
+          <li>
+            <span class="archive-list__vol">Volume 1 (2026) <span>▾</span></span>
+            <ul class="archive-list__issues">
+              <li><a href="papers.html">Issue 1 — April 2026</a></li>
+            </ul>
+          </li>
+        </ul>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content" id="main-content">
+
+        <h1 class="page-title">Submit a Paper</h1>
+        <p class="page-subtitle">
+          LAIEJ accepts original research via GitHub pull request. Submissions are open to everyone. There are no submission fees and no author processing charges.
+        </p>
+
+        <!-- How It Works -->
+        <section class="submit-section" aria-labelledby="how-heading">
+          <h2 id="how-heading">How It Works</h2>
+          <ol class="steps-list">
+            <li>
+              <div class="step-num">1</div>
+              <div class="step-body">
+                <h3>Fork the LAIEJ Repository</h3>
+                <p>Start by forking the journal's public GitHub repository to your own account. All papers are maintained as HTML and PDF files within the <code>papers/</code> directory.</p>
+                <br>
+                <a href="#" class="btn-primary" target="_blank" rel="noopener">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+                  Fork on GitHub
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="step-num">2</div>
+              <div class="step-body">
+                <h3>Write Your Paper Using the LAIEJ LaTeX Template</h3>
+                <p>
+                  Download the official template (see below) and write your paper in LaTeX. Place all files in a new folder named <code>papers/LAIEJ-YYYY-XXX/</code> where <code>YYYY</code> is the submission year and <code>XXX</code> is your proposed reference number (the editor will confirm or reassign this on review). Once your <code>.tex</code> file is ready, run <a href="https://pandoc.org" target="_blank" rel="noopener">Pandoc</a> to generate the HTML and PDF outputs:
+                </p>
+                <pre><code>pandoc LAIEJ-YYYY-XXX.tex -o LAIEJ-YYYY-XXX.html \
+  --standalone --css=../../styles.css
+
+pandoc LAIEJ-YYYY-XXX.tex -o LAIEJ-YYYY-XXX.pdf</code></pre>
+                <p style="font-size:0.85rem;color:var(--text-muted);margin-top:0.5rem;">
+                  Pandoc must be installed on your system. See <a href="https://pandoc.org/installing.html" target="_blank" rel="noopener">pandoc.org/installing.html</a>. For PDF output, a LaTeX distribution (TeX Live or MiKTeX) is also required.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="step-num">3</div>
+              <div class="step-body">
+                <h3>Open a Pull Request</h3>
+                <p>
+                  Push your branch and open a pull request against the <code>main</code> branch of the LAIEJ repository. In the PR description, include your paper title, a brief summary, and confirm that you have reviewed the submission checklist below. The editorial team reviews all submissions and aims to respond within <strong>14 days</strong> with one of: acceptance, revision request (with specific feedback), or rejection (with reasons). Accepted papers are merged immediately and go live on the journal website.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <!-- LaTeX Template -->
+        <section class="submit-section" aria-labelledby="template-heading">
+          <h2 id="template-heading">LaTeX Template</h2>
+          <p style="font-size:0.9rem;color:var(--text-muted);margin-bottom:1rem;">
+            All submissions must use the official LAIEJ template. This ensures consistent formatting across the journal and correct generation of HTML and PDF via Pandoc.
+          </p>
+          <div class="code-block-wrapper">
+            <pre><code>\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{natbib}
+
+% --- LAIEJ Metadata (required) ---
+\title{Your Paper Title}
+\author{Your Name \\ \small Independent Researcher / Your Institution}
+\date{Month Year}
+
+% --- Reference Code (assigned by editor, leave blank on submission) ---
+% LAIEJ-YYYY-XXX
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Your abstract here. Maximum 250 words.
+\end{abstract}
+
+\textbf{Keywords:} keyword1, keyword2, keyword3
+
+\section{Introduction \& Research Question}
+
+\section{Background / Literature Review}
+
+\section{Methodology}
+
+\section{Findings / Analysis}
+
+\section{Discussion}
+
+\section{Conclusion}
+
+\bibliographystyle{apalike}
+\bibliography{references}
+
+\end{document}</code></pre>
+          </div>
+          <a href="templates/laiej-template.tex" class="btn-primary btn-download-template" download>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 20h14v-2H5v2zm7-18v10.17l-3.59-3.58L7 10l5 5 5-5-1.41-1.41L13 12.17V2h-2z"/></svg>
+            Download Template (.tex)
+          </a>
+        </section>
+
+        <!-- Submission Checklist -->
+        <section class="submit-section" aria-labelledby="checklist-heading">
+          <h2 id="checklist-heading">Submission Checklist</h2>
+          <p style="font-size:0.9rem;color:var(--text-muted);margin-bottom:1rem;">
+            Review all items before submitting your pull request. Submissions that do not meet these requirements will be closed.
+          </p>
+
+          <div class="checklist-panel">
+
+            <div class="checklist-group">
+              <h3>Formatting Requirements</h3>
+              <div class="checklist-item">
+                <div class="check-icon" aria-hidden="true">☐</div>
+                <span>Paper uses the official LAIEJ LaTeX template</span>
+              </div>
+              <div class="checklist-item">
+                <div class="check-icon" aria-hidden="true">☐</div>
+                <span>File is in its own folder named <code>LAIEJ-YYYY-XXX/</code> containing the <code>.tex</code>, <code>.html</code>, and <code>.pdf</code> files</span>
+              </div>
+              <div class="checklist-item">
+                <div class="check-icon" aria-hidden="true">☐</div>
+                <span>Abstract is present and under 250 words</span>
+              </div>
+              <div class="checklist-item">
+                <div class="check-icon" aria-hidden="true">☐</div>
+                <span>All required sections are present: Introduction, Methodology, Findings, Discussion, Conclusion, References</span>
+              </div>
+              <div class="checklist-item">
+                <div class="check-icon" aria-hidden="true">☐</div>
+                <span>References formatted in APA 7th edition</span>
+              </div>
+            </div>
+
+            <div class="checklist-group">
+              <h3>Content Requirements</h3>
+              <div class="checklist-item">
+                <div class="check-icon" aria-hidden="true">☐</div>
+                <span>A clear, specific research question is stated in the Introduction</span>
+              </div>
+              <div class="checklist-item">
+                <div class="check-icon" aria-hidden="true">☐</div>
+                <span>Methodology explains how the research was conducted or the argument was constructed</span>
+              </div>
+              <div class="checklist-item">
+                <div class="check-icon" aria-hidden="true">☐</div>
+                <span>All claims are supported by citations, evidence, or reasoned argument</span>
+              </div>
+              <div class="checklist-item">
+                <div class="check-icon" aria-hidden="true">☐</div>
+                <span>Paper is within scope: AI ethics, LLM behaviour, AI in industry, AI security, alignment, or AI policy</span>
+              </div>
+              <div class="checklist-item">
+                <div class="check-icon" aria-hidden="true">☐</div>
+                <span>No promotional, commercial, or advertorial content</span>
+              </div>
+            </div>
+
+            <div class="checklist-group">
+              <h3>Legal &amp; Ethical Requirements</h3>
+              <div class="checklist-item">
+                <div class="check-icon" aria-hidden="true">☐</div>
+                <span>You are the sole original author of all submitted content</span>
+              </div>
+              <div class="checklist-item">
+                <div class="check-icon" aria-hidden="true">☐</div>
+                <span>You agree to publish under Creative Commons CC BY 4.0</span>
+              </div>
+              <div class="checklist-item">
+                <div class="check-icon" aria-hidden="true">☐</div>
+                <span>Any use of AI tools in research or writing is disclosed in the paper</span>
+              </div>
+              <div class="checklist-item">
+                <div class="check-icon" aria-hidden="true">☐</div>
+                <span>Submission does not contain plagiarised content</span>
+              </div>
+            </div>
+
+          </div><!-- .checklist-panel -->
+
+          <div class="callout-amber" role="note">
+            <strong>Note:</strong> Pull Requests that do not satisfy all checklist requirements will be closed with a detailed note explaining which criteria were not met. You are welcome to address the issues and resubmit.
+          </div>
+        </section>
+
+        <!-- Scope Guide -->
+        <section class="submit-section" aria-labelledby="scope-heading">
+          <h2 id="scope-heading">Scope Guide</h2>
+          <p style="font-size:0.9rem;color:var(--text-muted);margin-bottom:0.75rem;">
+            If you are unsure whether your paper falls within the scope of LAIEJ, use this guide. When in doubt, submit — the editor will advise on scope in the review response.
+          </p>
+          <div class="scope-grid">
+            <div class="scope-panel scope-panel--in">
+              <h3>In Scope</h3>
+              <ul>
+                <li>AI ethics &amp; governance</li>
+                <li>LLM behaviour &amp; alignment</li>
+                <li>AI security &amp; adversarial robustness</li>
+                <li>AI in industry &amp; applied use cases</li>
+                <li>Interpretability &amp; explainability</li>
+                <li>AI policy &amp; regulation</li>
+                <li>Bias, fairness, and representation in AI</li>
+                <li>Human-AI interaction and trust</li>
+              </ul>
+            </div>
+            <div class="scope-panel scope-panel--out">
+              <h3>Out of Scope</h3>
+              <ul>
+                <li>General ML without ethical or policy dimension</li>
+                <li>Hardware and infrastructure papers</li>
+                <li>Purely commercial case studies</li>
+                <li>Content promoting specific products</li>
+                <li>Computer vision or robotics (unless ethics-focused)</li>
+                <li>Mathematical proofs without applied context</li>
+                <li>Market analysis or investment research</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <!-- Right Sidebar -->
+      <aside class="right-sidebar" aria-label="Journal information">
+
+        <div class="sidebar-widget">
+          <h2 class="sidebar-widget__title">About the Journal</h2>
+          <p>LAIEJ is a peer-reviewed, open-access journal publishing original research on the ethics, safety, and governance of artificial intelligence.</p>
+          <p>All papers are freely available under CC BY 4.0.</p>
+        </div>
+
+        <div class="sidebar-widget">
+          <h2 class="sidebar-widget__title">Publication Details</h2>
+          <span class="issn-badge">ISSN XXXX-XXXX</span>
+          <br><br>
+          <a href="https://creativecommons.org/licenses/by/4.0/" class="license-badge" target="_blank" rel="noopener">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+            CC BY 4.0 Licence
+          </a>
+          <a href="#" class="github-link" target="_blank" rel="noopener">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+            GitHub Repository
+          </a>
+          <a href="feed.xml" class="rss-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19.01 7.38 20 6.18 20C4.98 20 4 19.01 4 17.82a2.18 2.18 0 0 1 2.18-2.18M4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27V4.44m0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93V10.1z"/></svg>
+            RSS Feed
+          </a>
+        </div>
+
+      </aside>
+
+    </div><!-- .page-layout -->
+  </div><!-- .site-wrapper -->
+
+  <footer class="site-footer">
+    <div class="site-wrapper">
+      &copy; 2026 Journal of AI Ethics &nbsp;·&nbsp;
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>
+      &nbsp;·&nbsp;
+      <a href="submit.html">Submit a Paper</a>
+      &nbsp;·&nbsp;
+      <a href="about.html">About</a>
+    </div>
+  </footer>
+
+</body>
+</html>

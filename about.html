@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Journal of AI Ethics</title>
+  <meta name="description" content="About the Journal of AI Ethics — mission, editorial standards, licensing, and how to contact us.">
+  <meta name="robots" content="index, follow">
+  <link rel="alternate" type="application/rss+xml" title="Journal of AI Ethics RSS Feed" href="feed.xml">
+  <link rel="canonical" href="https://journalofaiethics.org/about.html">
+  <link rel="stylesheet" href="styles.css">
+  <script src="theme.js"></script>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <nav class="top-nav" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="top-nav__brand">LAIEJ</a>
+    <div class="top-nav__actions">
+      <button id="theme-toggle" class="btn-theme" aria-label="Switch theme">☽ Dark</button>
+      <button id="hamburger-btn" class="btn-hamburger" aria-label="Open navigation" aria-expanded="false">☰</button>
+    </div>
+  </nav>
+
+  <div id="sidebar-overlay" class="sidebar-overlay" aria-hidden="true"></div>
+
+  <div class="site-wrapper">
+    <div class="page-layout">
+
+      <!-- Left Sidebar -->
+      <aside id="left-sidebar" class="left-sidebar" aria-label="Journal navigation">
+        <div class="sidebar-logo">
+          <a href="index.html" class="sidebar-logo__name">Journal of<br>AI Ethics</a>
+          <span class="sidebar-logo__sub">ISSN: XXXX-XXXX · Vol. 1</span>
+        </div>
+
+        <nav aria-label="Site pages">
+          <ul class="sidebar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="papers.html">Papers</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="submit.html">Submit</a></li>
+          </ul>
+        </nav>
+
+        <hr class="sidebar-divider">
+
+        <p class="sidebar-section-title">Browse by Topic</p>
+        <div class="topic-tags">
+          <a href="papers.html?tag=AI+Ethics" class="tag-btn">AI Ethics</a>
+          <a href="papers.html?tag=LLM+Security" class="tag-btn">LLM Security</a>
+          <a href="papers.html?tag=AI+in+Industry" class="tag-btn">AI in Industry</a>
+          <a href="papers.html?tag=Alignment" class="tag-btn">Alignment</a>
+          <a href="papers.html?tag=Interpretability" class="tag-btn">Interpretability</a>
+          <a href="papers.html?tag=AI+Policy" class="tag-btn">AI Policy</a>
+        </div>
+
+        <hr class="sidebar-divider">
+
+        <p class="sidebar-section-title">Archive</p>
+        <ul class="archive-list">
+          <li>
+            <span class="archive-list__vol">Volume 1 (2026) <span>▾</span></span>
+            <ul class="archive-list__issues">
+              <li><a href="papers.html">Issue 1 — April 2026</a></li>
+            </ul>
+          </li>
+        </ul>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content" id="main-content">
+
+        <h1 class="page-title">About the Journal</h1>
+        <p class="page-subtitle">Mission, editorial standards, licensing, and contact information.</p>
+
+        <!-- Mission -->
+        <section class="about-section" aria-labelledby="mission-heading">
+          <h2 id="mission-heading">Mission Statement</h2>
+          <p>
+            The Journal of AI Ethics (LAIEJ) exists to provide a rigorous, open-access venue for research at the intersection of artificial intelligence and public interest. We publish original scholarly work examining the ethical, social, legal, and technical dimensions of AI systems — with particular focus on large language models, alignment, AI governance, and the deployment of AI in industry. Our aim is to advance knowledge that is directly relevant to the responsible development and regulation of AI, and to make that knowledge freely accessible to researchers, practitioners, policymakers, and the public alike.
+          </p>
+          <p>
+            Unlike established commercial journals that impose paywalls and long publication delays, LAIEJ operates as a community-maintained repository: papers are submitted as pull requests to a public GitHub repository, reviewed by the editorial team, and published without charge to authors or readers. This model reflects our belief that research on the societal consequences of AI should not itself be locked behind proprietary infrastructure. Every paper published in LAIEJ is immediately and permanently free to read, download, and share.
+          </p>
+          <p>
+            We are particularly committed to publishing work from independent researchers, practitioners embedded in industry, and scholars from institutions that may lack access to traditional academic publishing networks. Rigour of argument and clarity of contribution matter more to us than institutional prestige. If the research is careful, well-reasoned, and addresses a genuine question within our scope, it has a place in LAIEJ.
+          </p>
+        </section>
+
+        <!-- Editorial Standards -->
+        <section class="about-section" aria-labelledby="standards-heading">
+          <h2 id="standards-heading">Editorial Standards</h2>
+          <p>All submissions are reviewed by the editorial team for scope, methodological soundness, and contribution to the field. We do not operate double-blind review at this stage, but we assess work on its merits. The following describes the work we accept and the work we do not.</p>
+          <div class="two-columns">
+            <div class="column-panel">
+              <h3>We accept</h3>
+              <ul>
+                <li>Empirical studies of LLM behaviour with clear methodology</li>
+                <li>Theoretical analyses of alignment, safety, or governance problems</li>
+                <li>Critical policy analyses of AI regulation proposals</li>
+                <li>Applied research on AI in specific industry contexts</li>
+                <li>Survey and position papers with a clear argumentative contribution</li>
+                <li>Interdisciplinary work combining technical and social science perspectives</li>
+                <li>Replications and negative results that advance collective understanding</li>
+              </ul>
+            </div>
+            <div class="column-panel column-panel--reject">
+              <h3>We do not accept</h3>
+              <ul>
+                <li>Papers without a clear research question or thesis</li>
+                <li>General ML benchmarking without ethical or policy relevance</li>
+                <li>Content that promotes specific commercial products or services</li>
+                <li>Purely speculative work without grounding in evidence or argument</li>
+                <li>Papers that have been published elsewhere without prior disclosure</li>
+                <li>Work that misrepresents AI capabilities or fabricates results</li>
+                <li>Papers below acceptable standards of academic writing</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Editor in Chief -->
+        <section class="about-section" aria-labelledby="editor-heading">
+          <h2 id="editor-heading">Editorial Team</h2>
+          <p>LAIEJ is currently maintained by a small editorial team. We are actively expanding the board. If you are an established researcher in AI ethics, alignment, or AI policy and would like to join as a reviewer or associate editor, please reach out.</p>
+          <div class="editor-card">
+            <div class="editor-avatar" aria-hidden="true">H</div>
+            <div class="editor-info">
+              <h3>Hamza [Surname]</h3>
+              <div class="editor-title">Editor in Chief · Founder, LAIEJ</div>
+              <p>
+                Independent researcher based in London, working on LLM behaviour, system prompt security, and AI governance. Hamza founded LAIEJ to create an accessible publication venue for practitioner-researchers who sit outside traditional academic institutions but are doing substantive work on the social and technical dimensions of AI. His own research examines the gap between stated AI policy and actual model behaviour.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Licensing -->
+        <section class="about-section" aria-labelledby="license-heading">
+          <h2 id="license-heading">Licensing: Creative Commons CC BY 4.0</h2>
+          <p>
+            Every paper published in LAIEJ is released under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">Creative Commons Attribution 4.0 International Licence (CC BY 4.0)</a>. In plain English, this means:
+          </p>
+          <p>
+            <strong>You are free to</strong> read, download, copy, distribute, print, and adapt any paper published here — including for commercial purposes — without asking permission or paying a fee. The only condition is that you give appropriate credit to the original authors and indicate if changes were made. You cannot apply legal terms that restrict others from doing the same.
+          </p>
+          <p>
+            Authors retain full copyright over their work. By submitting to LAIEJ, authors grant LAIEJ a non-exclusive licence to publish their work under CC BY 4.0. Authors may publish their work elsewhere simultaneously or subsequently, provided the original LAIEJ publication is acknowledged.
+          </p>
+        </section>
+
+        <!-- Indexing -->
+        <section class="about-section" aria-labelledby="indexing-heading">
+          <h2 id="indexing-heading">Indexing &amp; Discovery</h2>
+          <p>
+            Each paper page includes structured Google Scholar metadata (<code>citation_*</code> meta tags) following the recommendations of the Google Scholar Inclusion Guidelines. This ensures that papers are picked up by Google Scholar's crawler and appear in academic search results. Papers also appear in our <a href="feed.xml">RSS feed</a>, which can be subscribed to in any RSS reader.
+          </p>
+          <p>
+            We are in the process of applying for a formal ISSN (International Standard Serial Number) through the British Library and for indexing in DOAJ (Directory of Open Access Journals). Once assigned, the ISSN will be updated across all pages and metadata.
+          </p>
+        </section>
+
+        <!-- Contact -->
+        <section class="about-section" aria-labelledby="contact-heading">
+          <h2 id="contact-heading">Contact</h2>
+          <p>
+            For editorial enquiries, submission questions, or to report an error in a published paper, please email:
+            <a href="mailto:editor@journalofaiethics.org">editor@journalofaiethics.org</a>
+          </p>
+          <p>
+            For technical issues with the website or repository, please open an issue on the
+            <a href="#" target="_blank" rel="noopener">LAIEJ GitHub repository</a>.
+          </p>
+        </section>
+
+      </main>
+
+      <!-- Right Sidebar -->
+      <aside class="right-sidebar" aria-label="Journal information">
+
+        <div class="sidebar-widget">
+          <h2 class="sidebar-widget__title">About the Journal</h2>
+          <p>LAIEJ is a peer-reviewed, open-access journal publishing original research on the ethics, safety, and governance of artificial intelligence.</p>
+          <p>All papers are freely available under CC BY 4.0.</p>
+        </div>
+
+        <div class="sidebar-widget">
+          <h2 class="sidebar-widget__title">Publication Details</h2>
+          <span class="issn-badge">ISSN XXXX-XXXX</span>
+          <br><br>
+          <a href="https://creativecommons.org/licenses/by/4.0/" class="license-badge" target="_blank" rel="noopener">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+            CC BY 4.0 Licence
+          </a>
+          <a href="#" class="github-link" target="_blank" rel="noopener">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+            GitHub Repository
+          </a>
+          <a href="feed.xml" class="rss-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19.01 7.38 20 6.18 20C4.98 20 4 19.01 4 17.82a2.18 2.18 0 0 1 2.18-2.18M4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27V4.44m0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93V10.1z"/></svg>
+            RSS Feed
+          </a>
+        </div>
+
+      </aside>
+
+    </div><!-- .page-layout -->
+  </div><!-- .site-wrapper -->
+
+  <footer class="site-footer">
+    <div class="site-wrapper">
+      &copy; 2026 Journal of AI Ethics &nbsp;·&nbsp;
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>
+      &nbsp;·&nbsp;
+      <a href="submit.html">Submit a Paper</a>
+      &nbsp;·&nbsp;
+      <a href="about.html">About</a>
+    </div>
+  </footer>
+
+</body>
+</html>

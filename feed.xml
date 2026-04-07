@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Journal of AI Ethics</title>
+    <link>https://journalofaiethics.org/</link>
+    <description>Open-access academic research in AI ethics, alignment, LLM security, and AI policy. Published by the Journal of AI Ethics (LAIEJ).</description>
+    <language>en-GB</language>
+    <copyright>Creative Commons CC BY 4.0 — Journal of AI Ethics 2026</copyright>
+    <managingEditor>editor@journalofaiethics.org (LAIEJ Editorial Team)</managingEditor>
+    <webMaster>editor@journalofaiethics.org (LAIEJ)</webMaster>
+    <lastBuildDate>Tue, 01 Apr 2026 09:00:00 +0000</lastBuildDate>
+    <category>AI Ethics</category>
+    <category>Artificial Intelligence</category>
+    <ttl>1440</ttl>
+    <atom:link href="https://journalofaiethics.org/feed.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>Obedience Theatre: Do Rule-Heavy System Prompts Produce Real Policy Compliance or Just Better Acting?</title>
+      <link>https://journalofaiethics.org/papers/LAIEJ-2026-001/LAIEJ-2026-001.html</link>
+      <description><![CDATA[
+        <p><strong>Reference:</strong> LAIEJ-2026-001 | Volume 1, Issue 1 | April 2026</p>
+        <p><strong>Author:</strong> Hamza [Surname], Independent Researcher, London</p>
+        <p><strong>Tags:</strong> LLM Security, AI Ethics, Alignment</p>
+        <p>
+          When an assistant is given detailed internal rules, does it genuinely follow policy better, or does it simply
+          learn to sound compliant? This paper examines the gap between behavioural compliance signals and actual policy
+          adherence in large language models under heavily constrained system prompts. Drawing on a series of structured
+          prompt experiments, we distinguish between surface-level compliance theatre — where models produce outputs that
+          appear rule-following — and deeper behavioural policy internalisation. We introduce a taxonomy of four compliance
+          modes and evaluate their observable signatures. Implications for enterprise LLM deployment and AI governance
+          are discussed.
+        </p>
+        <p><a href="https://journalofaiethics.org/papers/LAIEJ-2026-001/LAIEJ-2026-001.html">Read the full paper</a></p>
+      ]]></description>
+      <author>editor@journalofaiethics.org (Hamza [Surname])</author>
+      <dc:creator>Hamza [Surname]</dc:creator>
+      <category>LLM Security</category>
+      <category>AI Ethics</category>
+      <category>Alignment</category>
+      <pubDate>Tue, 01 Apr 2026 09:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://journalofaiethics.org/papers/LAIEJ-2026-001/LAIEJ-2026-001.html</guid>
+      <enclosure url="https://journalofaiethics.org/papers/LAIEJ-2026-001/LAIEJ-2026-001.pdf" type="application/pdf" length="0"/>
+    </item>
+
+  </channel>
+</rss>
