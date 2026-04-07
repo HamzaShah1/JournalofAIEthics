@@ -149,16 +149,15 @@ a:hover { text-decoration: underline; }
 }
 .top-nav__brand:hover { text-decoration: none; }
 
-.brand-mark {
-  width: 34px;
-  height: 34px;
-  border-radius: 9px;
-  background: var(--gradient);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.brand-logo {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  display: block;
   flex-shrink: 0;
-  box-shadow: 0 2px 8px rgba(37,99,235,0.35);
+}
+[data-theme="dark"] .brand-logo {
+  filter: invert(1);
 }
 
 .brand-wordmark {
@@ -449,6 +448,21 @@ a:hover { text-decoration: underline; }
   bottom: -80px;
   left: 18%;
   pointer-events: none;
+}
+
+.hero-logo-bg {
+  position: absolute;
+  right: 6%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  opacity: 0.055;
+  filter: invert(1);
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
 }
 
 .hero-grid-pattern {
@@ -994,6 +1008,9 @@ pre code { background: none; padding: 0; font-size: inherit; color: inherit; bor
    ============================================================ */
 .site-footer { border-top: 1px solid var(--border); padding: 1.5rem 0; margin-top: auto; font-size: 0.72rem; color: var(--text-faint); }
 .footer-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; }
+.footer-brand { display: flex; align-items: center; gap: 0.45rem; }
+.footer-logo { width: 16px; height: 16px; object-fit: contain; opacity: 0.45; display: block; }
+[data-theme="dark"] .footer-logo { filter: invert(1); }
 .footer-links { display: flex; gap: 1.25rem; }
 .site-footer a { color: var(--text-faint); text-decoration: none; }
 .site-footer a:hover { color: var(--accent); }
