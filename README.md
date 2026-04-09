@@ -1,7 +1,7 @@
 # Journal of AI Ethics (LAIEJ)
 
 Open-access academic journal for AI ethics, alignment, LLM security, and AI policy research.
-**Live site:** https://journalofaiethics.org
+**Live site:** https://journalofaiethics.com
 **ISSN:** XXXX-XXXX (pending)
 
 ---
