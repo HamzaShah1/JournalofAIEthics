@@ -130,11 +130,6 @@
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 20h14v-2H5v2zm7-18v10.17l-3.59-3.58L7 10l5 5 5-5-1.41-1.41L13 12.17V2h-2z"/></svg>
               Download PDF
             </a>
-            <button id="copy-citation-btn" class="btn-secondary" aria-live="polite">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
-              Copy Citation
-              <span class="copy-confirm" id="copy-confirm" aria-hidden="true">Copied!</span>
-            </button>
           </div>
         </header>
 
@@ -217,6 +212,7 @@
             Inter-rater reliability was assessed using Cohen's kappa, with a resulting coefficient of κ = 0.81 across the full dataset, indicating strong agreement.<sup><a href="#fn2" id="ref2">2</a></sup>
           </p>
 
+          <div class="paper-blur-zone">
           <h2>4. Findings &amp; Analysis</h2>
 
           <p>
@@ -330,6 +326,7 @@
             </ul>
           </div>
 
+          </div><!-- .paper-blur-zone -->
         </article><!-- .paper-body -->
 
           <div class="paywall-blur" aria-hidden="true"></div>
@@ -337,24 +334,23 @@
             <div class="paywall-gate__inner">
               <span class="paywall-gate__badge">&#9679; Under Active Research</span>
               <p class="paywall-gate__title">Continue Reading</p>
-              <p class="paywall-gate__desc">This paper is currently in progress and has not yet undergone formal peer review. Download the PDF to read the full research.</p>
-              <a class="paywall-gate__btn" href="LAIEJ-2026-001.pdf" download>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 20h14v-2H5v2zm7-18v10.17l-3.59-3.58L7 10l5 5 5-5-1.41-1.41L13 12.17V2h-2z"/></svg>
-                Download Full Paper (PDF)
+              <p class="paywall-gate__desc">This paper is under active research and expected to be released shortly.</p>
+              <a class="paywall-gate__btn" href="mailto:hamzashah02@outlook.com">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                Contact Researcher
               </a>
             </div>
           </div>
         </div><!-- .paywall-wrapper -->
 
-        <!-- Citation Box -->
-        <div class="citation-box" aria-labelledby="citation-box-title">
-          <div class="citation-box__title" id="citation-box-title">How to Cite This Paper</div>
-          <pre class="citation-pre" id="apa-citation">Hamza Shah. (2026). Obedience theatre: Do rule-heavy system prompts produce real policy compliance or just better acting? <em>Journal of AI Ethics</em>, <em>1</em>(1). https://journalofaiethics.org/papers/LAIEJ-2026-001/LAIEJ-2026-001.html</pre>
-          <button id="copy-citation-box-btn" class="btn-secondary" aria-live="polite">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
-            Copy APA Citation
-            <span class="copy-confirm" id="copy-confirm-box" aria-hidden="true">Copied!</span>
-          </button>
+        <!-- Contact Researcher -->
+        <div class="citation-box" aria-labelledby="contact-researcher-title">
+          <div class="citation-box__title" id="contact-researcher-title">Contact the Researcher</div>
+          <p style="font-size:0.85rem;color:var(--text-muted);margin:0 0 1rem 0;">Questions about this paper? Reach out to the author directly.</p>
+          <a href="mailto:hamzashah02@outlook.com" class="btn-primary" style="display:inline-flex;align-items:center;gap:0.4rem;text-decoration:none;">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            Contact Researcher
+          </a>
         </div>
 
       </main>
@@ -415,55 +411,6 @@
     </div>
   </footer>
 
-  <script>
-    var APA_CITATION = 'Hamza Shah. (2026). Obedience theatre: Do rule-heavy system prompts produce real policy compliance or just better acting? Journal of AI Ethics, 1(1). https://journalofaiethics.org/papers/LAIEJ-2026-001/LAIEJ-2026-001.html';
-
-    function showConfirm(confirmEl) {
-      confirmEl.classList.add('show');
-      confirmEl.removeAttribute('aria-hidden');
-      setTimeout(function () {
-        confirmEl.classList.remove('show');
-        confirmEl.setAttribute('aria-hidden', 'true');
-      }, 2000);
-    }
-
-    function copyText(text, confirmEl) {
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(text).then(function () {
-          showConfirm(confirmEl);
-        }).catch(function () {
-          fallbackCopy(text, confirmEl);
-        });
-      } else {
-        fallbackCopy(text, confirmEl);
-      }
-    }
-
-    function fallbackCopy(text, confirmEl) {
-      var ta = document.createElement('textarea');
-      ta.value = text;
-      ta.style.position = 'fixed';
-      ta.style.opacity = '0';
-      document.body.appendChild(ta);
-      ta.select();
-      try { document.execCommand('copy'); showConfirm(confirmEl); } catch(e) {}
-      document.body.removeChild(ta);
-    }
-
-    document.addEventListener('DOMContentLoaded', function () {
-      var btn1 = document.getElementById('copy-citation-btn');
-      var confirm1 = document.getElementById('copy-confirm');
-      if (btn1 && confirm1) {
-        btn1.addEventListener('click', function () { copyText(APA_CITATION, confirm1); });
-      }
-
-      var btn2 = document.getElementById('copy-citation-box-btn');
-      var confirm2 = document.getElementById('copy-confirm-box');
-      if (btn2 && confirm2) {
-        btn2.addEventListener('click', function () { copyText(APA_CITATION, confirm2); });
-      }
-    });
-  </script>
 
 </body>
 </html>

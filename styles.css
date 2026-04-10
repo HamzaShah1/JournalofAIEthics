@@ -1073,19 +1073,22 @@ pre code { background: none; padding: 0; font-size: inherit; color: inherit; bor
   overflow: hidden;
 }
 
-/* Blur layer: covers the lower portion of the visible content */
+/* Frosted overlay box covering the gated content */
 .paywall-blur {
   position: absolute;
-  bottom: 160px;
+  top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
-  height: 320px;
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 1;
   pointer-events: none;
-  /* Fade in the blur gradually from the top of this zone */
-  -webkit-mask: linear-gradient(to bottom, transparent 0%, black 50%);
-  mask: linear-gradient(to bottom, transparent 0%, black 50%);
+}
+
+[data-theme="dark"] .paywall-blur {
+  background: rgba(15, 15, 20, 0.82);
 }
 
 /* Gate card: solid band at the bottom with the CTA */
@@ -1094,6 +1097,7 @@ pre code { background: none; padding: 0; font-size: inherit; color: inherit; bor
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 2;
   padding: 2.5rem 1.5rem 2rem;
   display: flex;
   flex-direction: column;
