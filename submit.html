@@ -79,7 +79,7 @@
 
         <h1 class="page-title">Submit a Paper</h1>
         <p class="page-subtitle">
-          LAIEJ accepts original research via GitHub pull request. Submissions are open to everyone. There are no submission fees and no author processing charges.
+          JOAIE accepts original research via GitHub pull request. Submissions are open to everyone. There are no submission fees and no author processing charges.
         </p>
 
         <!-- How It Works -->
@@ -89,7 +89,7 @@
             <li>
               <div class="step-num">1</div>
               <div class="step-body">
-                <h3>Fork the LAIEJ Repository</h3>
+                <h3>Fork the JOAIE Repository</h3>
                 <p>Start by forking the journal's public GitHub repository to your own account. All papers are maintained as HTML and PDF files within the <code>papers/</code> directory.</p>
                 <br>
                 <a href="https://github.com/HamzaShah1/JournalofAIEthics/fork" class="btn-primary" target="_blank" rel="noopener">
@@ -101,14 +101,14 @@
             <li>
               <div class="step-num">2</div>
               <div class="step-body">
-                <h3>Write Your Paper Using the LAIEJ LaTeX Template</h3>
+                <h3>Write Your Paper Using the JOAIE LaTeX Template</h3>
                 <p>
-                  Download the official template (see below) and write your paper in LaTeX. Place all files in a new folder named <code>papers/LAIEJ-YYYY-XXX/</code> where <code>YYYY</code> is the submission year and <code>XXX</code> is your proposed reference number (the editor will confirm or reassign this on review). Once your <code>.tex</code> file is ready, run <a href="https://pandoc.org" target="_blank" rel="noopener">Pandoc</a> to generate the HTML and PDF outputs:
+                  Download the official template (see below) and write your paper in LaTeX. Place all files in a new folder named <code>papers/JOAIE-YYYY-XXX/</code> where <code>YYYY</code> is the submission year and <code>XXX</code> is your proposed reference number (the editor will confirm or reassign this on review). Once your <code>.tex</code> file is ready, run <a href="https://pandoc.org" target="_blank" rel="noopener">Pandoc</a> to generate the HTML and PDF outputs:
                 </p>
-                <pre><code>pandoc LAIEJ-YYYY-XXX.tex -o LAIEJ-YYYY-XXX.html \
+                <pre><code>pandoc JOAIE-YYYY-XXX.tex -o JOAIE-YYYY-XXX.html \
   --standalone --css=../../styles.css
 
-pandoc LAIEJ-YYYY-XXX.tex -o LAIEJ-YYYY-XXX.pdf</code></pre>
+pandoc JOAIE-YYYY-XXX.tex -o JOAIE-YYYY-XXX.pdf</code></pre>
                 <p style="font-size:0.85rem;color:var(--text-muted);margin-top:0.5rem;">
                   Pandoc must be installed on your system. See <a href="https://pandoc.org/installing.html" target="_blank" rel="noopener">pandoc.org/installing.html</a>. For PDF output, a LaTeX distribution (TeX Live or MiKTeX) is also required.
                 </p>
@@ -119,7 +119,7 @@ pandoc LAIEJ-YYYY-XXX.tex -o LAIEJ-YYYY-XXX.pdf</code></pre>
               <div class="step-body">
                 <h3>Open a Pull Request</h3>
                 <p>
-                  Push your branch and open a pull request against the <code>main</code> branch of the LAIEJ repository. In the PR description, include your paper title, a brief summary, and confirm that you have reviewed the submission checklist below. The editorial team reviews all submissions and aims to respond within <strong>14 days</strong> with one of: acceptance, revision request (with specific feedback), or rejection (with reasons). Accepted papers are merged immediately and go live on the journal website.
+                  Push your branch and open a pull request against the <code>main</code> branch of the JOAIE repository. In the PR description, include your paper title, a brief summary, and confirm that you have reviewed the submission checklist below. The editorial team reviews all submissions and aims to respond within <strong>14 days</strong> with one of: acceptance, revision request (with specific feedback), or rejection (with reasons). Accepted papers are merged immediately and go live on the journal website.
                 </p>
               </div>
             </li>
@@ -130,7 +130,7 @@ pandoc LAIEJ-YYYY-XXX.tex -o LAIEJ-YYYY-XXX.pdf</code></pre>
         <section class="submit-section" aria-labelledby="template-heading">
           <h2 id="template-heading">LaTeX Template</h2>
           <p style="font-size:0.9rem;color:var(--text-muted);margin-bottom:1rem;">
-            All submissions must use the official LAIEJ template. This ensures consistent formatting across the journal and correct generation of HTML and PDF via Pandoc.
+            All submissions must use the official JOAIE template. This ensures consistent formatting across the journal and correct generation of HTML and PDF via Pandoc.
           </p>
           <div class="code-block-wrapper">
             <pre><code>\documentclass{article}
@@ -138,13 +138,13 @@ pandoc LAIEJ-YYYY-XXX.tex -o LAIEJ-YYYY-XXX.pdf</code></pre>
 \usepackage{hyperref}
 \usepackage{natbib}
 
-% --- LAIEJ Metadata (required) ---
+% --- JOAIE Metadata (required) ---
 \title{Your Paper Title}
 \author{Your Name \\ \small Independent Researcher / Your Institution}
 \date{Month Year}
 
 % --- Reference Code (assigned by editor, leave blank on submission) ---
-% LAIEJ-YYYY-XXX
+% JOAIE-YYYY-XXX
 
 \begin{document}
 \maketitle
@@ -191,11 +191,11 @@ Your abstract here. Maximum 250 words.
               <h3>Formatting Requirements</h3>
               <div class="checklist-item">
                 <div class="check-icon" aria-hidden="true">☐</div>
-                <span>Paper uses the official LAIEJ LaTeX template</span>
+                <span>Paper uses the official JOAIE LaTeX template</span>
               </div>
               <div class="checklist-item">
                 <div class="check-icon" aria-hidden="true">☐</div>
-                <span>File is in its own folder named <code>LAIEJ-YYYY-XXX/</code> containing the <code>.tex</code>, <code>.html</code>, and <code>.pdf</code> files</span>
+                <span>File is in its own folder named <code>JOAIE-YYYY-XXX/</code> containing the <code>.tex</code>, <code>.html</code>, and <code>.pdf</code> files</span>
               </div>
               <div class="checklist-item">
                 <div class="check-icon" aria-hidden="true">☐</div>
@@ -266,7 +266,7 @@ Your abstract here. Maximum 250 words.
         <section class="submit-section" aria-labelledby="scope-heading">
           <h2 id="scope-heading">Scope Guide</h2>
           <p style="font-size:0.9rem;color:var(--text-muted);margin-bottom:0.75rem;">
-            If you are unsure whether your paper falls within the scope of LAIEJ, use this guide. When in doubt, submit — the editor will advise on scope in the review response.
+            If you are unsure whether your paper falls within the scope of JOAIE, use this guide. When in doubt, submit — the editor will advise on scope in the review response.
           </p>
           <div class="scope-grid">
             <div class="scope-panel scope-panel--in">
@@ -304,7 +304,7 @@ Your abstract here. Maximum 250 words.
 
         <div class="sidebar-widget">
           <h2 class="sidebar-widget__title">About the Journal</h2>
-          <p>LAIEJ is a peer-reviewed, open-access journal publishing original research on the ethics, safety, and governance of artificial intelligence.</p>
+          <p>JOAIE is a peer-reviewed, open-access journal publishing original research on the ethics, safety, and governance of artificial intelligence.</p>
           <p>All papers are freely available under CC BY 4.0.</p>
         </div>
 

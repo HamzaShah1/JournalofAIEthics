@@ -1,4 +1,4 @@
-# Journal of AI Ethics (LAIEJ)
+# Journal of AI Ethics (JOAIE)
 
 Open-access academic journal for AI ethics, alignment, LLM security, and AI policy research.
 **Live site:** https://journalofaiethics.com
@@ -24,9 +24,9 @@ Open-access academic journal for AI ethics, alignment, LLM security, and AI poli
 ├── templates/
 │   └── laiej-template.tex      Official LaTeX template for authors
 └── papers/
-    └── LAIEJ-2026-001/
-        ├── LAIEJ-2026-001.html Paper page (HTML version)
-        └── LAIEJ-2026-001.pdf  Paper (PDF version)
+    └── JOAIE-2026-001/
+        ├── JOAIE-2026-001.html Paper page (HTML version)
+        └── JOAIE-2026-001.pdf  Paper (PDF version)
 ```
 
 ---
@@ -38,23 +38,23 @@ Open-access academic journal for AI ethics, alignment, LLM security, and AI poli
 Create a new folder under `papers/` using the reference code format:
 
 ```
-papers/LAIEJ-YYYY-XXX/
+papers/JOAIE-YYYY-XXX/
 ```
 
 Where `YYYY` is the year and `XXX` is a zero-padded sequence number (e.g. `002`, `003`).
 
 ### Step 2 — Write the paper in LaTeX
 
-Download `templates/laiej-template.tex`, copy it into your new folder, rename it to `LAIEJ-YYYY-XXX.tex`, and write your paper. Create a `references.bib` file for your bibliography.
+Download `templates/laiej-template.tex`, copy it into your new folder, rename it to `JOAIE-YYYY-XXX.tex`, and write your paper. Create a `references.bib` file for your bibliography.
 
 ### Step 3 — Generate HTML and PDF with Pandoc
 
 From inside the paper folder, run:
 
 ```bash
-pandoc LAIEJ-YYYY-XXX.tex -o LAIEJ-YYYY-XXX.html --standalone --css=../../styles.css
+pandoc JOAIE-YYYY-XXX.tex -o JOAIE-YYYY-XXX.html --standalone --css=../../styles.css
 
-pandoc LAIEJ-YYYY-XXX.tex -o LAIEJ-YYYY-XXX.pdf
+pandoc JOAIE-YYYY-XXX.tex -o JOAIE-YYYY-XXX.pdf
 ```
 
 Pandoc must be installed: https://pandoc.org/installing.html
@@ -64,11 +64,11 @@ PDF output requires a LaTeX distribution (TeX Live or MiKTeX).
 
 Add a new paper card to `index.html` (in the Latest and All Papers tab panels) and to `papers.html` (in the static fallback, if used).
 
-Add the paper's data object to the `LAIEJ.papers` array at the top of `search.js`:
+Add the paper's data object to the `JOAIE.papers` array at the top of `search.js`:
 
 ```js
 {
-  id: 'LAIEJ-2026-002',
+  id: 'JOAIE-2026-002',
   title: 'Your Paper Title',
   author: 'Author Name',
   affiliation: 'Author Affiliation',
@@ -77,8 +77,8 @@ Add the paper's data object to the `LAIEJ.papers` array at the top of `search.js
   abstract: 'Full abstract text...',
   tags: ['AI Ethics', 'Alignment'],
   keywords: ['keyword1', 'keyword2'],
-  url: 'papers/LAIEJ-2026-002/LAIEJ-2026-002.html',
-  pdf: 'papers/LAIEJ-2026-002/LAIEJ-2026-002.pdf'
+  url: 'papers/JOAIE-2026-002/JOAIE-2026-002.html',
+  pdf: 'papers/JOAIE-2026-002/JOAIE-2026-002.pdf'
 }
 ```
 
@@ -144,7 +144,7 @@ Once you receive your ISSN, update the following locations in the code:
 
 ## Licence
 
-All papers published in LAIEJ are released under **Creative Commons CC BY 4.0**.
+All papers published in JOAIE are released under **Creative Commons CC BY 4.0**.
 The journal website code (HTML, CSS, JS) is released under the **MIT Licence**.
 
 &copy; 2026 Journal of AI Ethics

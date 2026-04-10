@@ -3,11 +3,11 @@
   <channel>
     <title>Journal of AI Ethics</title>
     <link>https://journalofaiethics.org/</link>
-    <description>Open-access academic research in AI ethics, alignment, LLM security, and AI policy. Published by the Journal of AI Ethics (LAIEJ).</description>
+    <description>Open-access academic research in AI ethics, alignment, LLM security, and AI policy. Published by the Journal of AI Ethics (JOAIE).</description>
     <language>en-GB</language>
     <copyright>Creative Commons CC BY 4.0 — Journal of AI Ethics 2026</copyright>
-    <managingEditor>editor@journalofaiethics.org (LAIEJ Editorial Team)</managingEditor>
-    <webMaster>editor@journalofaiethics.org (LAIEJ)</webMaster>
+    <managingEditor>editor@journalofaiethics.org (JOAIE Editorial Team)</managingEditor>
+    <webMaster>editor@journalofaiethics.org (JOAIE)</webMaster>
     <lastBuildDate>Tue, 01 Apr 2026 09:00:00 +0000</lastBuildDate>
     <category>AI Ethics</category>
     <category>Artificial Intelligence</category>
@@ -16,9 +16,9 @@
 
     <item>
       <title>Obedience Theatre: Do Rule-Heavy System Prompts Produce Real Policy Compliance or Just Better Acting?</title>
-      <link>https://journalofaiethics.org/papers/LAIEJ-2026-001/LAIEJ-2026-001.html</link>
+      <link>https://journalofaiethics.org/papers/JOAIE-2026-001/JOAIE-2026-001.html</link>
       <description><![CDATA[
-        <p><strong>Reference:</strong> LAIEJ-2026-001 | Volume 1, Issue 1 | April 2026</p>
+        <p><strong>Reference:</strong> JOAIE-2026-001 | Volume 1, Issue 1 | April 2026</p>
         <p><strong>Author:</strong> Hamza Shah, Independent Researcher, London</p>
         <p><strong>Tags:</strong> LLM Security, AI Ethics, Alignment</p>
         <p>
@@ -30,7 +30,7 @@
           modes and evaluate their observable signatures. Implications for enterprise LLM deployment and AI governance
           are discussed.
         </p>
-        <p><a href="https://journalofaiethics.org/papers/LAIEJ-2026-001/LAIEJ-2026-001.html">Read the full paper</a></p>
+        <p><a href="https://journalofaiethics.org/papers/JOAIE-2026-001/JOAIE-2026-001.html">Read the full paper</a></p>
       ]]></description>
       <author>editor@journalofaiethics.org (Hamza Shah)</author>
       <dc:creator>Hamza Shah</dc:creator>
@@ -38,8 +38,8 @@
       <category>AI Ethics</category>
       <category>Alignment</category>
       <pubDate>Tue, 01 Apr 2026 09:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://journalofaiethics.org/papers/LAIEJ-2026-001/LAIEJ-2026-001.html</guid>
-      <enclosure url="https://journalofaiethics.org/papers/LAIEJ-2026-001/LAIEJ-2026-001.pdf" type="application/pdf" length="0"/>
+      <guid isPermaLink="true">https://journalofaiethics.org/papers/JOAIE-2026-001/JOAIE-2026-001.html</guid>
+      <enclosure url="https://journalofaiethics.org/papers/JOAIE-2026-001/JOAIE-2026-001.pdf" type="application/pdf" length="0"/>
     </item>
 
   </channel>

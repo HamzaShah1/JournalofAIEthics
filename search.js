@@ -2,11 +2,11 @@
    Requires Fuse.js loaded before this script.
    Handles real-time search + tag filtering + sort on papers.html */
 
-var LAIEJ = LAIEJ || {};
+var JOAIE = JOAIE || {};
 
-LAIEJ.papers = [
+JOAIE.papers = [
   {
-    id: 'LAIEJ-2026-001',
+    id: 'JOAIE-2026-001',
     title: 'Obedience Theatre: Do Rule-Heavy System Prompts Produce Real Policy Compliance or Just Better Acting?',
     author: 'Hamza Shah',
     affiliation: 'Independent Researcher, London',
@@ -15,8 +15,8 @@ LAIEJ.papers = [
     abstract: 'When an assistant is given detailed internal rules, does it genuinely follow policy better, or does it simply learn to sound compliant? This paper examines the gap between behavioural compliance signals and actual policy adherence in large language models under heavily constrained system prompts.',
     tags: ['LLM Security', 'AI Ethics', 'Alignment'],
     keywords: ['large language models', 'system prompts', 'compliance', 'AI safety', 'alignment', 'policy enforcement'],
-    url: 'papers/LAIEJ-2026-001/LAIEJ-2026-001.html',
-    pdf: 'papers/LAIEJ-2026-001/LAIEJ-2026-001.pdf',
+    url: 'papers/JOAIE-2026-001/JOAIE-2026-001.html',
+    pdf: 'papers/JOAIE-2026-001/JOAIE-2026-001.pdf',
     wip: true
   }
   /* Add new papers here as objects with the same shape */
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
   /* ----- Fuse.js initialisation ----- */
   var fuse = null;
   if (typeof Fuse !== 'undefined') {
-    fuse = new Fuse(LAIEJ.papers, {
+    fuse = new Fuse(JOAIE.papers, {
       keys: [
         { name: 'title',    weight: 0.40 },
         { name: 'abstract', weight: 0.30 },
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function getSortedFiltered() {
-    var pool = LAIEJ.papers;
+    var pool = JOAIE.papers;
 
     /* Tag filter */
     if (activeTag) {
