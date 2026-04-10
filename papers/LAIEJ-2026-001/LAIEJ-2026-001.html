@@ -156,16 +156,8 @@
         </div>
 
         <!-- Paper Body -->
-        <article class="paper-body paper-body--wip" id="paper-body">
-
-          <div class="paper-wip-overlay" aria-label="Paper status notice">
-            <div class="paper-wip-overlay__inner">
-              <span class="paper-wip-overlay__badge">&#9679; Under Active Research</span>
-              <p class="paper-wip-overlay__title">Not Yet Formally Published</p>
-              <p class="paper-wip-overlay__desc">This paper is currently in progress and has not yet undergone formal peer review or publication. Content may change prior to final release.</p>
-              <a class="paper-wip-overlay__btn" href="mailto:hamzashah02@outlook.com">Contact the Researcher</a>
-            </div>
-          </div>
+        <div class="paywall-wrapper">
+        <article class="paper-body" id="paper-body">
 
           <h2>1. Introduction &amp; Research Question</h2>
 
@@ -339,6 +331,20 @@
           </div>
 
         </article><!-- .paper-body -->
+
+          <div class="paywall-blur" aria-hidden="true"></div>
+          <div class="paywall-gate" aria-label="Access full paper">
+            <div class="paywall-gate__inner">
+              <span class="paywall-gate__badge">&#9679; Under Active Research</span>
+              <p class="paywall-gate__title">Continue Reading</p>
+              <p class="paywall-gate__desc">This paper is currently in progress and has not yet undergone formal peer review. Download the PDF to read the full research.</p>
+              <a class="paywall-gate__btn" href="LAIEJ-2026-001.pdf" download>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 20h14v-2H5v2zm7-18v10.17l-3.59-3.58L7 10l5 5 5-5-1.41-1.41L13 12.17V2h-2z"/></svg>
+                Download Full Paper (PDF)
+              </a>
+            </div>
+          </div>
+        </div><!-- .paywall-wrapper -->
 
         <!-- Citation Box -->
         <div class="citation-box" aria-labelledby="citation-box-title">
