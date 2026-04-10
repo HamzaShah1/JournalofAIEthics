@@ -16,7 +16,8 @@ LAIEJ.papers = [
     tags: ['LLM Security', 'AI Ethics', 'Alignment'],
     keywords: ['large language models', 'system prompts', 'compliance', 'AI safety', 'alignment', 'policy enforcement'],
     url: 'papers/LAIEJ-2026-001/LAIEJ-2026-001.html',
-    pdf: 'papers/LAIEJ-2026-001/LAIEJ-2026-001.pdf'
+    pdf: 'papers/LAIEJ-2026-001/LAIEJ-2026-001.pdf',
+    wip: true
   }
   /* Add new papers here as objects with the same shape */
 ];
@@ -63,8 +64,19 @@ document.addEventListener('DOMContentLoaded', function () {
       return '<span class="tag-pill tag-pill--' + tagClass(t) + '">' + t + '</span>';
     }).join('');
 
+    var wipOverlay = paper.wip
+      ? '<div class="paper-wip-overlay" aria-label="Paper status notice">' +
+          '<div class="paper-wip-overlay__inner">' +
+            '<span class="paper-wip-overlay__badge">&#9679; Under Active Research</span>' +
+            '<p class="paper-wip-overlay__title">Not Yet Formally Published</p>' +
+            '<p class="paper-wip-overlay__desc">This paper is currently in progress and has not yet undergone formal peer review or publication. Content may change prior to final release.</p>' +
+            '<a class="paper-wip-overlay__btn" href="mailto:hamzashah02@outlook.com">Contact the Researcher</a>' +
+          '</div>' +
+        '</div>'
+      : '';
+
     return (
-      '<article class="paper-card" ' +
+      '<article class="paper-card' + (paper.wip ? ' paper-card--wip' : '') + '" ' +
         'data-id="' + paper.id + '" ' +
         'data-tags="' + paper.tags.join('|') + '" ' +
         'data-date="' + paper.dateSort + '" ' +
@@ -84,6 +96,7 @@ document.addEventListener('DOMContentLoaded', function () {
           '<a class="paper-card__read" href="' + paper.url + '">Read paper &rarr;</a>' +
           '<a class="paper-card__pdf" href="' + paper.pdf + '" download>&#8595; PDF</a>' +
         '</div>' +
+        wipOverlay +
       '</article>'
     );
   }
